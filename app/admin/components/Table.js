@@ -7,7 +7,7 @@ export default function Table({ projects, onEdit, onDelete }) {
                         <th className="px-6 py-4 font-semibold">ID</th>
                         <th className="px-6 py-4 font-semibold">Title</th>
                         <th className="px-6 py-4 font-semibold">Description</th>
-                        <th className="px-6 py-4 font-semibold">Github</th>
+                        <th className="px-6 py-4 font-semibold">TechStack</th>
                         <th className="px-6 py-4 font-semibold">Image</th>
                         <th className="px-6 py-4 font-semibold">Action</th>
                     </tr>
@@ -33,16 +33,13 @@ export default function Table({ projects, onEdit, onDelete }) {
                                 </p>
                             </td>
 
-                            <td className="px-6 py-4">
-                                <a
-                                    href={project.githubLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-600 hover:underline"
-                                >
-                                    Visit
-                                </a>
+                            <td className="px-6 py-4 max-w-[220px]">
+                                <p className="line-clamp-2">
+                                    {project.techStack?.join(", ")}
+                                </p>
                             </td>
+
+
 
                             <td className="px-6 py-4">
                                 {project.image ? (

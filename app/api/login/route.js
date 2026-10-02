@@ -4,7 +4,8 @@ export async function POST(request) {  // Ito ang API Route mo.
     const { email, password } = await request.json();  // {} called this object destructuring, response.json() server to client
 
 
-    if(email === "Eran@gmail.com" && password === "123") {
+    if( email === process.env.ADMIN_EMAIL && 
+        password === process.env.ADMIN_PASSWORD) {
             
         return NextResponse.json({  // NextResponse.json is the answer for client side bu json pedeng array nexted json
             success: true,

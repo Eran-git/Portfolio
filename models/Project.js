@@ -3,10 +3,24 @@ import mongoose from "mongoose";
 
 const ProjectSchema = new mongoose.Schema(              //ProjectSchema we creating form  or template no database
   {
-    title: String,
-    description: String,
-    githubLink: String,
-    image: String,
+    title: {
+      type: String,
+      required: true,
+    },
+
+    description: {
+      type: String,
+      required: true,
+    },
+
+    techStack: {
+      type: [String],
+    },
+
+    image: {
+      type: String,
+    },
+    
   },
   {
     timestamps: true,

@@ -58,7 +58,7 @@ export default function LoginAccount({isOpen, onClose}) {
             <form className="relative flex flex-col justify-center items-center gap-4 rounded-xl w-96 p-6 bg-gray-500"
                     onSubmit={handleSubmit}
             >
-                <h1 className="mb-5 text-4xl font-ariel font-bold">SignUp</h1>
+                <h1 className="mb-5 text-4xl font-ariel font-bold">ADMIN</h1>
 
                 <input
                     type="email"
