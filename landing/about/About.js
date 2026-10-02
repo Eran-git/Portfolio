@@ -28,9 +28,9 @@ export default function About({ isDarkMode, mobileSize }) {
                 <div className={` ${mobileSize ? "" : ""} flex flex-col gap-2`}>
 
                     {/* item 1 */}
-                    <motion.div className={` ${isDarkMode ? "border-black/30" : "border-white/30"} 
-                        ${mobileSize ? "" : "flex-col"}
-                        flex justify-between items-center 
+                    <motion.div className={` 
+                        ${isDarkMode ? "border-black/30" : "border-white/30"} 
+                        flex md:flex-row flex-col justify-between items-center 
                         md:gap-20 gap-5
                         md:px-10 px-5
                         md:py-15 py-3
@@ -54,8 +54,7 @@ export default function About({ isDarkMode, mobileSize }) {
 
                      {/* item 2*/}
                     <motion.div className={` ${isDarkMode ? "border-black/30" : "border-white/30"} 
-                        ${mobileSize ? "" : "flex-col"}
-                        flex justify-between items-center 
+                        flex md:flex-row flex-col justify-between items-center 
                         md:gap-20 gap-5
                         md:px-10 px-5
                         md:py-15 py-3
@@ -78,8 +77,7 @@ export default function About({ isDarkMode, mobileSize }) {
 
                      {/* item 3 */}
                     <motion.div className={` ${isDarkMode ? "border-black/30" : "border-white/30"} 
-                        ${mobileSize ? "" : "flex-col"}
-                        flex justify-between items-center 
+                        flex md:flex-row flex-col justify-between items-center 
                         md:gap-20 gap-5
                         md:px-10 px-5
                         md:py-15 py-3
@@ -126,8 +124,7 @@ export default function About({ isDarkMode, mobileSize }) {
                                             ? "border-black/30"
                                             : "border-white/30"
                                     }
-                                    ${mobileSize ? "" : "flex-col"}
-                                    flex justify-between items-center
+                                    flex md:flex-row flex-col justify-between items-center
                                     md:gap-20 gap-5
                                     md:px-10 px-5
                                     md:py-15 py-3
@@ -173,8 +170,7 @@ export default function About({ isDarkMode, mobileSize }) {
                                             ? "border-black/30"
                                             : "border-white/30"
                                     }
-                                    ${mobileSize ? "" : "flex-col"}
-                                    flex justify-between items-center
+                                    flex md:flex-row flex-col justify-between items-center
                                     md:gap-20 gap-5
                                     md:px-10 px-5
                                     md:py-15 py-3
@@ -219,8 +215,7 @@ export default function About({ isDarkMode, mobileSize }) {
                                             ? "border-black/30"
                                             : "border-white/30"
                                     }
-                                    ${mobileSize ? "" : "flex-col"}
-                                    flex justify-between items-center
+                                    flex md:flex-row flex-col justify-between items-center
                                     md:gap-20 gap-5
                                     md:px-10 px-5
                                     md:py-15 py-3

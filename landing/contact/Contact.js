@@ -57,8 +57,9 @@ export default function Contact({isDarkMode, mobileSize}) {
                 : "bg-black"
                 } 
                 w-full
-                md:px-30
-                md:py-10`}
+                md:px-30 px-5
+                md:py-10 py-5
+                `}
         >
 
             <h1 className={` 
@@ -70,7 +71,7 @@ export default function Contact({isDarkMode, mobileSize}) {
                 Contact
             </h1>
 
-            <div className="flex justify-between">
+            <div className="flex md:flex-row flex-col gap-2 justify-between">
 
                 <div>
                     <p className={`
@@ -92,7 +93,7 @@ export default function Contact({isDarkMode, mobileSize}) {
                         Feel free to reach out!
                     </p>
 
-                    <div className="flex flex-col items-start gap-2 mt-3">
+                    <div className="hidden md:flex flex-col items-start gap-2 mt-3">
                         <div className={`
                             ${isDarkMode
                                 ? "text-black"
@@ -116,7 +117,7 @@ export default function Contact({isDarkMode, mobileSize}) {
 
                     </div>
 
-                    <ul className="flex gap-4 list-none pt-5">
+                    <ul className="hidden md:flex gap-4 list-none pt-5">
                         {contact.map((item) => (
                             <li key={item.name}
                                 className=""
@@ -138,7 +139,7 @@ export default function Contact({isDarkMode, mobileSize}) {
                         isDarkMode ? "text-black/60" : "text-white/60"
                     } flex flex-col gap-2`}
                 >
-                    <div className="flex gap-2">
+                    <div className="flex md:flex-row flex-col gap-2">
                         <input
                             type="text"
                             name="name"
